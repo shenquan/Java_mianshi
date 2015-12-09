@@ -14,4 +14,8 @@ public class PrivateTest {
         out.println(t.fun());
 
     }
+    private class jj{
+
+    }
 }
+
