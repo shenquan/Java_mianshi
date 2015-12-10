@@ -1,11 +1,12 @@
 package com.han;
 
-import com.han.enumtest.ConstantsTest;
-
 /**
  * Created by HSQ on 2015/12/9.
  */
 class Test {
+    public void fun(){
+        System.out.println("mm");
+    }
 }
 
 public class ConstructorTest extends Test {
@@ -18,7 +19,8 @@ public class ConstructorTest extends Test {
     ConstructorTest(int k) {
         this.k = k;
     }
-    void ConstructorTest(){
+
+    void ConstructorTest() {
         System.out.println("kk");
     }
 
@@ -27,5 +29,14 @@ public class ConstructorTest extends Test {
         ConstructorTest t = new ConstructorTest(3);
         t0.ConstructorTest();
         t.ConstructorTest();
+        //反射
+        try {
+            Class c= Class.forName("Test");
+            Test x = (Test)c.newInstance();
+            x.fun();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+//        Class c1 = Test.class;
     }
 }
