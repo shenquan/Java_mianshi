@@ -59,15 +59,34 @@ short a4= 129;
         String j2=new String("f");
         if(j1.equals(j2))System.out.println("String:aa=bb");*/
 
-        Test5 aa=new Test5();
+/*        Test5 aa=new Test5();
         Test5 bb = new Test5();
         int u1=aa.hashCode();
         int u2=bb.hashCode();
         if(u1==u2){
             System.out.println("hashCode():u1=u2");
         }
-//        hashSet
-    }
 
+        System.out.println(System.currentTimeMillis());
+        int  aaa[][]= new int[][]{{1,2},{4,5,6}};
+        for(int [] a:aaa){
+            for(int b:a){
+                System.out.print(b+" ");
+            }
+            System.out.println();
+        }*/
+        int [][]a=new int[2][];
+        a[0]=new int[]{1,2};
+        a[1]=new int []{1,23,4};
+        int []k[];
+        int []kk;
+        int [][] rre=new int[2][];
+//        char rkew[]="fej";
+        Test4 n = new Test4();
+//        System.out.println(n.size());
+        String x=new String("egw我们");
+        System.out.println(x.length());
+
+    }
 
 }
