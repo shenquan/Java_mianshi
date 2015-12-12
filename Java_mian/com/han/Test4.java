@@ -66,6 +66,7 @@ short a4= 129;
         if(u1==u2){
             System.out.println("hashCode():u1=u2");
         }
+//        hashSet
     }
 
 
