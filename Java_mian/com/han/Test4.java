@@ -86,6 +86,7 @@ short a4= 129;
 //        System.out.println(n.size());
         String x=new String("egw我们");
         System.out.println(x.length());
+        System.out.println(x.getBytes().length);
 
     }
 
